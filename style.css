@@ -1,0 +1,33 @@
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+
+
+}
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 3px solid red;
+}
+button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 40px;
+  background-color: yellow;
+  border: none;
+  
+  
+}
+
+.ani {
+  animation: go 2s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes go{
+  0%{top: 0px; left: 0px; }
+  100%{top: 300px; left: 300px;}
+}
