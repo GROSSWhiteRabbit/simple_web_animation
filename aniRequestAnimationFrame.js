@@ -16,6 +16,7 @@
     }
 
     btn.addEventListener('click', () => {
+        pos = 0;
         elem.style.top = "0px";
         elem.style.left = '0px';
     

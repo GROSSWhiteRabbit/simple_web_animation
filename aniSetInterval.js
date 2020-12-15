@@ -20,8 +20,9 @@ function frame() {
 }
 
 btn.addEventListener('click', () => {
+    
     box.style.top = "0px";
-        box.style.left = '0px';
+    box.style.left = '0px';
 setTimeout(myAnimation, 500, box);
 });
 })()
