@@ -3,11 +3,13 @@
     box = document.querySelector('.box');
 
 btn.addEventListener('click', () => {
+    box.classList.remove('ani');
+
 setTimeout(animation, 500, box);
 });
 
 function animation(elem) {
-elem.classList.add('ani');
+    elem.classList.add('ani');
 }
 })()
 

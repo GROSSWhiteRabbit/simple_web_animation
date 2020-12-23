@@ -11,18 +11,19 @@ const id = setInterval(frame, 10);
 function frame() {
     if (pos == 300) {
         clearInterval(id);
+        elem.style.transform = `translate(0px,0px)`;
+
     } else {
         pos+= 3;
-        elem.style.top = pos + "px";
-        elem.style.left = pos + 'px';
+        elem.style.transform = `translate(${pos}px,${pos}px)`;
     }
 }
 }
 
 btn.addEventListener('click', () => {
     
-    box.style.top = "0px";
-    box.style.left = '0px';
+    box.style.transform = "translate(0px,0px)";
+
 setTimeout(myAnimation, 500, box);
 });
 })()

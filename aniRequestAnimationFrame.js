@@ -7,18 +7,19 @@
 
     function myAnimation() {
     pos+= 3;
-    elem.style.top = pos + "px";
-    elem.style.left = pos + 'px';
+    elem.style.transform = `translate(${pos}px,${pos}px)`;
+
 
     if (pos < 300) {
         requestAnimationFrame(myAnimation);
+    } else {
+        elem.style.transform = `translate(0px,0px)`;
     }
     }
 
     btn.addEventListener('click', () => {
         pos = 0;
-        elem.style.top = "0px";
-        elem.style.left = '0px';
+        elem.style.transform = "translate(0px,0px)";
     
         requestAnimationFrame(myAnimation)
     });

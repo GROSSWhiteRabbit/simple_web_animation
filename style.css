@@ -24,10 +24,10 @@ button {
 
 .ani {
   animation: go 2s;
-  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; */
 
 }
 @keyframes go{
-  0%{top: 0px; left: 0px; }
-  100%{top: 300px; left: 300px;}
+  0%{transform: translate(0px,0px)}
+  100%{transform: translate(300px,300px)}
 }
